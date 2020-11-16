@@ -1,6 +1,10 @@
 pyCFR
 =====
 
+原来是基于 python2 的，改成 python3
+实现了 CFR， MC-CFR 
+这个实现，完全是按照poker的模式来的， 没考虑其他类型的游戏
+
 A python implementation of Counterfactual Regret Minimization (CFR) [1] for flop-style poker games like Texas Hold'em, Leduc, and Kuhn poker. The library currently implements vanilla CFR [1], Chance Sampling (CS) CFR [1,2], Outcome Sampling (CS) CFR [2], and Public Chance Sampling (PCS) CFR [3].
 
 Note that this library is intended to automatically support relatively small games. It is written in pure python and is not optimized for speed nor memory usage. Full-scale Texas Hold'em will likely be too slow and too big to handle. You should use this library if you want to learn about CFR, you are doing research on toy problems, or you want to sanity check your implementation on a poker variant where no optimized code is publicly available.
